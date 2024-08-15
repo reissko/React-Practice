@@ -24,7 +24,9 @@ function Board() {
             const [a, b, c] = combination;
             if (cells[a].innerHTML && cells[a].innerHTML === cells[b].innerHTML && cells[b].innerHTML === cells[c].innerHTML) {
                 alert(`Player ${cells[a].innerHTML} wins!`);
-                
+                cells[a].style.backgroundColor = "green";
+                cells[b].style.backgroundColor = "green";
+                cells[c].style.backgroundColor = "green";
                 return;
             }
         }
